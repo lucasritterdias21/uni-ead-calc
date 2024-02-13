@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f8f8;
+    justify-content: center; 
+    align-items: center;
+}
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 800px;   
+    border: 2px solid black;
+    margin-right: 10px;
+    padding: 20px;
+    font-family: monospace;
+    color: darkslategrey;
+    font-weight: bold;
+    border-radius: 20px;
+    align-items: center;
+    
+}
+
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    height: 400px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: center;
+
+}
+
+
+button {
+    display: flex;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    font-family: montserrat;
+    margin-top: 20px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 12px;
+    align-items: center;
+}
+
+
+.resultados {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-family: monospace;
+    font-weight: bold;
+
+}
+
+p {
+    font-weight: bold;
+    font-family: monospace;
+}

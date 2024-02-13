@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Calculadora de notas</title>
+  </head>
+
+  <body>
+            <div class="wrapper">
+              <div class="cards">
+                <img src="" alt="">
+                <h2>Calculadora de notas faculdade</h2>
+                <div class="calculator">
+                   
+                   <label for="notaA">Nota A:</label>
+                   <input type="number" id="notaA" step="0.01">
+
+                   <label for="notaB">Nota B:</label>
+                   <input type="number" id="notaB" step="0.01">
+
+
+                    <button class="btn-calcular" onclick="calcularNotas()">Calcular</button>
+
+                    <div class="resultados">
+                      <p id="resultado">Nota final: </p>
+                      <p id="faltaPara6">Falta para 6: </p>
+                    </div>
+                </div>
+              </div>
+              <p>Na UNISINOS as avaliações são da seguinte maneira:<br>- O GRAU A (nota A): vale 10 * 0,3 (peso 3 - 30%)<br>- O GRAU B (nota B): vale 10 * 0,7 (peso 7 - 70%)<br>Calculadora destinada a facilitar e automatizar o controle das notas nos semestres.</p>
+            </div>  
+
+            <script> 
+
+              function calcularNotas() {
+                  // Obter valores das notas
+                  const notaA = parseFloat(document.getElementById("notaA").value);
+                  const notaB = parseFloat(document.getElementById("notaB").value);
+      
+                  // Calcular resultados
+                  var resultado = (notaA * 0.3) + (notaB * 0.7);
+                  var faltaPara6 = 6 - resultado;
+      
+                  // Exibir resultados
+                  document.getElementById("resultado").innerText = "Resultado: " + resultado.toFixed(2);
+                  document.getElementById("faltaPara6").innerText = "Falta para 6: " + faltaPara6.toFixed(2);
+              }
+
+          </script>
+   
+  </body>
+</html>
