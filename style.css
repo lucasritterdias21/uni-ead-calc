@@ -87,7 +87,6 @@ p {
     }
 }
 
-/* Consulta de mídia para telas menores que 768px (por exemplo, celulares) */
 @media (max-width: 767px) {
     .cards {
         height: auto;
@@ -101,6 +100,5 @@ p {
         display: flex;
         flex-direction: column;
     }
-
 
 }
