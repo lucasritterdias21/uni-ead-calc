@@ -19,7 +19,7 @@
 
 .cards {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     height: 500px;
     width: 800px;   
     border: 2px solid black;
@@ -73,4 +73,34 @@ button {
 p {
     font-weight: bold;
     font-family: monospace;
+}
+
+
+@media (max-width: 1199px) {
+    .cards {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .calculator {
+        width: 100%;
+    }
+}
+
+/* Consulta de mídia para telas menores que 768px (por exemplo, celulares) */
+@media (max-width: 767px) {
+    .cards {
+        height: auto;
+    }
+
+    .calculator {
+        height: auto;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }
