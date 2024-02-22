@@ -9,7 +9,12 @@ function calcularNotas() {
 
     // Exibir resultados
     document.getElementById("resultado").innerText = "Resultado: " + resultado.toFixed(2);
-    document.getElementById("faltaPara6").innerText = "Falta para 6: " + faltaPara6.toFixed(2);
+
+    if (resultado >= 6) {
+        document.getElementById("faltaPara6").innerText = "Falta para 6: Você está aprovado!";
+    } else {
+        var faltaPara6 = 6 - resultado;
+        document.getElementById("faltaPara6").innerText = "Falta para 6: " + faltaPara6.toFixed(2);
+    }
+    
 }
-
-
